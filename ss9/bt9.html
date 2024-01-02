@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .square {
+        width: 400px;
+        height: 200px;
+        background-color: rgb(255, 0, 0);
+        text-align: center;
+        border-radius: 0%;
+      }
+      .square:hover {
+        animation-name: color;
+        animation-duration: 2s;
+      }
+      @keyframes color {
+        0% {
+          border-radius: 0%;
+        }
+        50% {
+          border-radius: 50%;
+        }
+        100% {
+          border-radius: 0%;
+        }
+      }
+      h1 {
+        margin-top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="square"><h1>square to circle</h1></div>
+  </body>
+</html>
